@@ -1,0 +1,42 @@
+.gift-container {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+}
+
+.gift-card {
+    display: grid;
+    position: relative;
+    background-color: var(--container-color);
+    box-shadow: 0 4px 16px hsla(255, 25%, 15%, 0.1);
+    padding: 1.5rem 1rem 1rem;
+    border-radius: 0.75rem;
+}
+
+.gift-img {
+    width: 100px;
+    justify-self: center;
+    margin-bottom: var(--mb-0-25);
+    transition: 0.3s;
+}
+
+.gift-icon {
+    font-size: 1.25rem;
+    color: var(--first-color);
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    cursor: pointer;
+}
+
+.gift-price {
+    font-size: var(--h3-font-size);
+}
+
+.gift-title {
+    font-size: var(--smaller-fon-size);
+    font-weight: var(--font-medium);
+}
+
+.gift-card:hover .gift-img {
+    transform: translateY(-0.25rem);
+}

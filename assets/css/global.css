@@ -75,3 +75,17 @@ button {
     margin-bottom: var(--mb-2-5);
     text-align: center;
 }
+
+.button {
+    display: inline-block;
+    background-color: var(--first-color);
+    color: #fff;
+    padding: 1.15rem 2.75rem;
+    font-weight: var(--font-medium);
+    border-radius: 3rem;
+    transition: 0.3s;
+}
+
+.button:hover {
+    background-color: var(--first-color-alt);
+}

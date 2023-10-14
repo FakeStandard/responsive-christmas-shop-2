@@ -1,0 +1,20 @@
+.celebrate-container {
+    row-gap: 1rem;
+}
+
+.celebrate-data {
+    text-align: center;
+}
+
+.celebrate-title {
+    margin-bottom: var(--mb-1-5);
+}
+
+.celebrate-description {
+    margin-bottom: var(--mb-2-5);
+}
+
+.celebrate-img {
+    width: 280px;
+    justify-self: center;
+}

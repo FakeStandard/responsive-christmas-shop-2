@@ -1,0 +1,41 @@
+.message-container {
+    row-gap: 3rem;
+    background-color: var(--first-color);
+    padding: 2.5rem 1.5rem 2.5rem;
+    border-radius: 1.25rem;
+}
+
+.message-form {
+    text-align: center;
+}
+
+.message-title {
+    color: #fff;
+    margin-bottom: var(--mb-1-5);
+}
+
+.message-input {
+    width: 100%;
+    background: #fff;
+    color: var(--text-color);
+    padding: 1rem 1.5rem;
+    border-radius: 3rem;
+    border: none;
+    outline: none;
+    margin-bottom: var(--mb-1);
+}
+
+.message-button {
+    background-color: var(--title-color);
+    width: 100%;
+}
+
+.message-button:hover {
+    background-color: var(--title-color);
+}
+
+.message-img {
+    width: 200px;
+    justify-self: center;
+    transform: rotate(15deg);
+}

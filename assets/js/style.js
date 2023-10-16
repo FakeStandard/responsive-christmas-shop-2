@@ -88,15 +88,15 @@ const themeButton = document.getElementById('theme-button')
 const darkTheme = 'dark-theme'
 const iconTheme = 'bx-sun'
 
-const selectedTheme = localStorage.getItem('selected-theme') ? 'dark' : 'light'
-const selectedIcon = localStorage.getItem('selected-icon') ? 'bx bx-moon' : 'bx bx-sun'
+const selectedTheme = localStorage.getItem('selected-theme')
+const selectedIcon = localStorage.getItem('selected-icon')
 
-const getCurrentTheme = () => document.body.classList.contains(darkTheme)
-const getCurrentIcon = () => document.body.classList.contains(iconTheme)
+const getCurrentTheme = () => document.body.classList.contains(darkTheme) ? 'dark-theme' : 'light-theme'
+const getCurrentIcon = () => themeButton.classList.contains(iconTheme) ? 'bx-moon' : 'bx-sun'
 
 if (selectedTheme) {
-    document.body.classList[selectedTheme === 'dark' ? 'add' : 'remove'](darkTheme)
-    themeButton.classList[selectedIcon === 'bx bx-moon' ? 'add' : 'remove`'](iconTheme)
+    document.body.classList[selectedTheme === 'dark-theme' ? 'add' : 'remove'](darkTheme)
+    themeButton.classList[selectedIcon === 'bx-moon' ? 'add' : 'remove'](iconTheme)
 }
 
 themeButton.addEventListener('click', () => {

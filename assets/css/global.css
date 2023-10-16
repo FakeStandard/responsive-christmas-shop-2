@@ -89,3 +89,14 @@ button {
 .button:hover {
     background-color: var(--first-color-alt);
 }
+
+::-webkit-scrollbar {
+    width: 0.6rem;
+    background: hsl(255, 8%, 44%);
+    border-radius: 1rem;
+}
+
+::-webkit-scrollbar-thumb {
+    background: hsl(255, 32%, 17%);
+    border-radius: 1rem;
+}

@@ -21,6 +21,7 @@ body {
     margin: var(--header-height) 0 0 0;
     background-color: var(--body-color);
     color: var(--text-color);
+    transition: 0.4s;
 }
 
 h1,
@@ -118,4 +119,29 @@ body.dark-theme {
     --text-color: hsl(355, 4%, 75%);
     --body-color: hsl(355, 20%, 12%);
     --container-color: hsl(355, 16%, 16%);
+}
+
+.dark-theme .scroll-header,
+.dark-theme .nav-menu {
+    box-shadow: 0 2px 4px hsla(0, 0%, 4%, 0.3);
+}
+
+.dark-theme .message-container {
+    background-color: var(--container-color);
+}
+
+.dark-theme .message-input {
+    background-color: var(--body-color);
+}
+
+.dark-theme .message-button {
+    background-color: var(--first-color);
+}
+
+.dark-theme .message-button:hover {
+    background-color: var(--first-color-alt);
+}
+
+.dark-theme::-webkit-scrollbar {
+    background: hsl(355, 8%, 30%);
 }

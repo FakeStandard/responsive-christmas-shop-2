@@ -1,4 +1,4 @@
-# :christmas_tree: RWD Christma Shop
+# :christmas_tree: RWD Christmas Shop
 
 - Responsive Website Modern Design
 - Using HTML, CSS & JavaScript
